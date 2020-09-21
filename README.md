@@ -94,52 +94,50 @@ config = {
   'backend': 'click',
   'io': [{
       'name': {
-        'prompt': 'Your name',
-        'type': 'str'
+        'type': 'str',
+        'prompt': 'Your name'
       }
     },
     {
       'username': {
-        'default': '<env:USER,USERNAME>',
+        'type': 'str',
         'prompt': 'Your GitHub username',
-        'type': 'str'
+        'default': '<env:USER,USERNAME>'
       }
     },
     {
       'prompt1': {
-        'fg': 'green',
+        'type': 'echo',
         'prompt': "Hello, <io:name> (<io:username>)!\nYour GitHub URL is https://github.com/<io:username>\nYour current working directory is '<cwd>'",
-        'type': 'echo'
+        'fg': 'green'
       }
     },
     {
       'project_dir': {
-        'default': '<cwd>',
+        'type': 'str',
         'prompt': 'Enter project directory',
-        'type': 'str'
+        'default': '<cwd>'
       }
     },
     {
       'prompt2': {
+        'type': 'echo',
+        'prompt': 'Enter a name for your new project. It will be created at <io:project_dir>/<project_name>',
         'fg': 'blue',
-        'prompt': 'Enter a name for your new project. It will '
-        'be created at <io:project_dir>/<project '
-        'name>',
-        'type': 'echo'
       }
     },
     {
       'project_name': {
-        'prompt': 'Project name',
-        'type': 'str'
+        'type': 'str',
+        'prompt': 'Project name'
       }
     },
     {
       'feature_x': {
+        'type': 'choice',
+        'prompt': 'Do you want to enable feature X?',
         'choices': ['Yes', 'No'],
         'default': 'Yes',
-        'prompt': 'Do you want to enable feature X?',
-        'type': 'choice'
       }
     }
   ]
