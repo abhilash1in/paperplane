@@ -50,7 +50,9 @@ setup(
     packages=find_packages(),
     use_scm_version=True,
     setup_requires=["setuptools_scm"],
-    install_requires=["pyyaml", "click"],
+    # colorama enables ANSI colors support on Windows
+    # See https://click.palletsprojects.com/utils/
+    install_requires=["pyyaml", "click", "colorama"],
     extras_require={
         "docs": ["sphinx", "sphinx_rtd_theme", "recommonmark"],
     },
