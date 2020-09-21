@@ -50,7 +50,7 @@ setup(
     packages=find_packages(),
     use_scm_version=True,
     setup_requires=["setuptools_scm"],
-    install_requites=["pyyaml", "click"],
+    install_requires=["pyyaml", "click"],
     extras_require={
         "docs": ["sphinx", "sphinx_rtd_theme", "recommonmark"],
     },
