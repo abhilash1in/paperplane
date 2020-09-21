@@ -29,7 +29,7 @@ def from_json(json_string: str) -> dict:
 
     :param json_string: JSON string to work on
     :type json_string: str
-    :return: dict representation of the given YAML string
+    :return: dict representation of the given JSON string
     :rtype: dict
     """
     try:
