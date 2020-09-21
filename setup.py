@@ -42,7 +42,7 @@ setup(
     name="paperplane",
     author="Abhilash Kishore",
     author_email="abhilash1in@gmail.com",
-    description="Paperplane",
+    description="A simple interactive CLI builder",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/abhilash1in/paperplane",
@@ -50,6 +50,7 @@ setup(
     packages=find_packages(),
     use_scm_version=True,
     setup_requires=["setuptools_scm"],
+    install_requites=["pyyaml", "click"],
     entry_points={
         "console_scripts": [
             "paperplane=paperplane:main",

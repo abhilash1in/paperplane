@@ -1,7 +1,8 @@
+# Build, test and publish paperplane 𒓴 Python 🐍 distributions 📦 to TestPyPI
 # This workflow will run tox with different Python versions, run static code checks and publish to PyPI
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Build, test and publish paperplane 𒓴 Python 🐍 distributions 📦 to TestPyPI
+name: CI
 
 on:
   workflow_dispatch:
