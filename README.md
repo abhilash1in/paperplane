@@ -1,6 +1,7 @@
 # Paperplane
-
+![CI](https://github.com/abhilash1in/paperplane/workflows/CI/badge.svg)
 [![Documentation Status](https://readthedocs.org/projects/paperplane/badge/?version=latest)](https://paperplane.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version](https://badge.fury.io/py/paperplane.svg)](https://badge.fury.io/py/paperplane)
 
 Paperplane allows you to build interactive CLIs straight from a configuration file (or a Python dict) without having to write your own code for I/O.
 
@@ -93,7 +94,7 @@ paperplane collect /path/to/config.yml
 ```
 
 Result:  
-![Sample Usage](assets/images/sample_usage.png)
+![Sample Usage](https://raw.githubusercontent.com/abhilash1in/paperplane/master/assets/images/sample_usage.png)
 
 ---
 If you want a JSON output (instead of the default Python dict dump):
