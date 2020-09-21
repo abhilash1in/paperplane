@@ -51,6 +51,9 @@ setup(
     use_scm_version=True,
     setup_requires=["setuptools_scm"],
     install_requites=["pyyaml", "click"],
+    extras_require={
+        "docs": ["sphinx", "sphinx_rtd_theme", "recommonmark"],
+    },
     entry_points={
         "console_scripts": [
             "paperplane=paperplane:main",
